@@ -26,7 +26,7 @@ function Navbar() {
       <ul className={styles.navLinks}>
         <li>
           <NavLink to="/feed" className={({ isActive }) => isActive ? styles.active : ''}>
-            Feed
+            Feeds
           </NavLink>
         </li>
         <li className={showSearch ? styles.active : ''} onClick={handleSearchClick}>
