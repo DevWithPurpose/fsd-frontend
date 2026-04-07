@@ -1,0 +1,28 @@
+.page {
+  padding: 48px 40px;
+  background-color: var(--bg);
+  min-height: 300px;
+  transition: background-color 0.3s;
+}
+
+.page h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.page p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 28px 16px;
+  }
+
+  .page h2 {
+    font-size: 18px;
+  }
+}
