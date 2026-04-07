@@ -63,7 +63,6 @@
 
 /* ─── Base styles ───────────────────────────────────────────────────────────── */
 body {
-  font-family: system-ui, -apple-system, sans-serif;
   background-color: var(--bg-subtle);
   color: var(--text-primary);
   transition: background-color 0.3s, color 0.3s;

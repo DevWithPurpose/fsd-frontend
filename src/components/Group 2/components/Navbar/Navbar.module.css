@@ -14,7 +14,6 @@
   font-size: 18px;
   font-weight: 700;
   color: var(--brand);
-  font-family: Georgia, serif;
 }
 
 .navLinks {
@@ -118,12 +117,12 @@
 
 /* Theme toggle button */
 .themeBtn {
+  display: none;
   background: none;
   border: 1px solid var(--border-input);
   border-radius: 50%;
   width: 34px;
   height: 34px;
-  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;

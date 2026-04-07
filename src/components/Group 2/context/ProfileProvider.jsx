@@ -10,7 +10,7 @@ function ProfileProvider({ children }) {
     () => localStorage.getItem('profileName') || 'User'
   )
   const [bio, setBio] = useState(
-    () => localStorage.getItem('profileBio') || 'Bio'
+    () => localStorage.getItem('profileBio') || 'Helping neighbours build, fix, and grow since 2019. Based in East Vancouver.'
   )
 
   // communityImpact will hold the data we get back from the fake API

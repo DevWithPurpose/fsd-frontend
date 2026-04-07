@@ -59,8 +59,8 @@ function ProfileHeader() {
               </div>
             </div>
             <div className={styles.meta}>
-              <p><MdOutlineLocationOn size={15} /> {communityImpact.location}</p>
-              <p><BsCalendar3 size={13} /> Joined {communityImpact.joinedDate}</p>
+              <p><MdOutlineLocationOn size={15} className={styles.metaIcon} /> {communityImpact.location}</p>
+              <p><BsCalendar3 size={13} className={styles.metaIcon} /> Joined {communityImpact.joinedDate}</p>
             </div>
           </>
         ) : (
