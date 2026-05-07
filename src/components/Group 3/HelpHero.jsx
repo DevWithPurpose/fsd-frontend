@@ -105,7 +105,7 @@ const HelpHero = () => {
                     {a.para.map((item, index) => (
                       <li
                         key={index}
-                        className="text-[14px] text-[#56615F] font-[500] leading-5 tracking-0"
+                        className="text-[14px] text-[#56615F] font-medium leading-5 tracking-0"
                       >
                         {item}
                       </li>
@@ -138,7 +138,7 @@ const HelpHero = () => {
                     </p>
                   </div>
 
-                  <button className="w-[158px] h-[36px] bg-[#ffffff] text-[#2A3433] text-[14px] font-bold leading-5 text-center px-6 py-2 rounded-[9999px]">
+                  <button className="w-39.5 h-9 bg-[#ffffff] text-[#2A3433] text-[14px] font-bold leading-5 text-center px-6 py-2 rounded-[9999px]">
                     {c.btnText}
                   </button>
                 </div>
