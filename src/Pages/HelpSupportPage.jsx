@@ -4,7 +4,7 @@ import HelpHero from "../components/Group 3/HelpHero";
 
 const HelpSupportPage = () => {
   return (
-    <div>
+    <div className="bg-[#F6FAF8]">
       <HelpSupportNavBar />
       <HelpHero />
     </div>
