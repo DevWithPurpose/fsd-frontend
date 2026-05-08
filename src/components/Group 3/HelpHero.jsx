@@ -1,11 +1,14 @@
 import React from "react";
 import { IoIosSearch } from "react-icons/io";
+import { AiOutlineExport } from "react-icons/ai";
+
 import {
   gettingStarted,
   accountSet,
   commGuidelines,
   safety,
   needHelp,
+  faq,
 } from "../../utils/accountPageData";
 
 const HelpHero = () => {
@@ -149,7 +152,34 @@ const HelpHero = () => {
         </div>
       </div>
       {/* FAQ Section */}
-      <div></div>
+      <div className="mt-20 max-w-304 flex flex-col gap-8">
+        <div className="flex justify-between items-center">
+          <h6 className="text-[#2A3433] font-bold text-[24px] leading-8 tracking-[-0.6px]">
+            Frequently Asked Questions
+          </h6>
+          <div className="flex items-center gap-1">
+            <p className="text-[#1D6A63] font-normal text-[14px] leading-5">
+              View all FAQ
+            </p>
+            <AiOutlineExport className="w-2.75 h-2.75" color="#1D6A63" />
+          </div>
+        </div>
+        <div className="w-full grid grid-cols-1 gap-12 md:grid-cols-2">
+          {faq.map((f, i) => {
+            return (
+              <div
+                key={i}
+                className="flex justify-between items-center max-w-146 h-15.25 py-4 px-2 shadow-xs shadow-[#A9B4B233] border border-[#A9B4B233]"
+              >
+                <h5 className="text-[#2A3433] text-[18px] font-bold leading-7">
+                  {f.question}
+                </h5>
+                <f.icon className="w-7 h-7" color="#A9B4B2" />
+              </div>
+            );
+          })}
+        </div>
+      </div>
       {/* Still need a hand ? */}
       {needHelp.map((n, i) => {
         return (
