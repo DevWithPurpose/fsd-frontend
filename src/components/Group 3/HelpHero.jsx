@@ -5,6 +5,7 @@ import {
   accountSet,
   commGuidelines,
   safety,
+  needHelp,
 } from "../../utils/accountPageData";
 
 const HelpHero = () => {
@@ -145,6 +146,64 @@ const HelpHero = () => {
               </div>
             );
           })}
+        </div>
+      </div>
+      {/* FAQ Section */}
+      <div></div>
+      {/* Still need a hand ? */}
+      {needHelp.map((n, i) => {
+        return (
+          <div
+            key={i}
+            className="mt-20 max-w-304 flex flex-col items-center justify-between gap-8 rounded-2xl bg-[#E7F0ED] p-12"
+          >
+            <div className="w-20 h-20 rounded-[9999px] bg-[#1d6a63]/10 flex justify-center items-center">
+              <n.icon className="w-7.5 h-6.75" color="#1D6A63" />
+            </div>
+            <div>
+              <h6 className="font-extrabold text-[36px] text-[#2a3433] leading-9 tracking-[-0.9px] text-center">
+                {n.heading}
+              </h6>
+            </div>
+            <div className="max-w-xl ">
+              <p className="font-normal text-[18px] text-[#56615f] leading-6.25 tracking-0 text-center ">
+                {n.para}
+              </p>
+            </div>
+            <div className="w-56.75 h-15 rounded-[9999px] py-4 px-10 bg-linear-to-r from-[#1D6A63] to-[#075D57] shadow-lg shadow-[#2A34330F] cursor-pointer">
+              <button className="text-[#E2FFFA] font-bold text-[18px] leading-7 text-center cursor-pointer">
+                {n.btnTxt}
+              </button>
+            </div>
+            <div className="flex flex-col md:flex-row items-center gap-8 text-[#56615F] text-[14px] leading-5 text-center">
+              <div className="flex items-center gap-2">
+                <n.iconEmail color="#1D6A63" className="w-3.5 h-3.5" />
+                {n.email}
+              </div>
+              <div className="flex items-center gap-2 ">
+                <n.iconSite color="#1D6A63" className="w-3.5 h-3.5" />
+                {n.site}
+              </div>
+            </div>
+          </div>
+        );
+      })}
+      {/* Footer */}
+      <div className="mt-20 w-full py-12 px-8 bg-[#ffffff] border border-[#a9b4b2]/10 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="mb-5 md:mb-0">
+          <p className="text-[20px] leading-7 tracking-[-1px] text-[#1d6a63] font-bold ">
+            The Commons
+          </p>
+        </div>
+        <div className="my-5 md:my-0 flex flex-col md:flex-row justify-between items-center gap-2 lg:gap-8 text-[14px] font-normal text-[#56615f] leading-5">
+          <p>Privacy Policy</p>
+          <p>Terms of Service</p>
+          <p>Cookie Policy</p>
+        </div>
+        <div>
+          <p className="text-center lg:text-start  text-[14px] font-normal text-[#727d7b] ">
+            © {new Date().getFullYear()} The Commons. All rights reserved.
+          </p>
         </div>
       </div>
     </div>
