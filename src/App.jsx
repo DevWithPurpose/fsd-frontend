@@ -12,7 +12,7 @@ function App() {
           <Route path="/" element={<Welcome />} />
           <Route path="/createpost" element={<Page />} />
           <Route path="/Help" element={<HelpSupportPage />} />
-          <Route path="/accout-settings" element={<AccountSettings />} />
+          <Route path="/account-settings" element={<AccountSettings />} />
         </Routes>
       </Router>
     </>
