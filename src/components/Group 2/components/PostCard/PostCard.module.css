@@ -1,13 +1,16 @@
 .card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border);
+  background-color: #ffffff;
   border-radius: 12px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
   cursor: pointer;
-  transition: box-shadow 0.2s, background-color 0.3s;
+  transition:
+    box-shadow 0.2s,
+    background-color 0.3s;
+  height: 293px;
+ 
 }
 
 .card:hover {
@@ -18,55 +21,64 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 328px;
 }
 
 .category {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 4px 10px;
   border-radius: 20px;
+  color: #045C55;
 }
 
 .status {
   font-size: 12px;
-  color: var(--text-accent);
+  color:#1D6A63;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
+
 }
 
 .title {
   font-size: 18px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #2A3433;
   margin: 0;
+  margin-top: 5px;
   line-height: 1.4;
+  /* font-family: manrope; */
+    max-width: 250px;
 }
 
 .description {
   font-size: 13px;
-  color: var(--text-secondary);
+  color: #56615F;
   line-height: 1.6;
   margin: 0;
+  margin-top: 7px;
 }
 
 .cardFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: auto;
-  padding-top: 12px;
-  border-top: 1px solid var(--border);
+ margin-top: 20px;
+  padding-top: 17px;
+  border-top: 2px solid #A9B4B21A;
+    
 }
 
 .responses {
   font-size: 11px;
   letter-spacing: 1px;
-  color: var(--text-muted);
+  color: #727D7B;
+  
 }
 
 .arrow {
-  color: var(--brand);
+  color: #727D7B;
 }

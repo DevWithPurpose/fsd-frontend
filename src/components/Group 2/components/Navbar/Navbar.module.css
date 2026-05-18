@@ -1,19 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 40px;
-  background-color: var(--bg-subtle);
-  border-bottom: 1px solid var(--border);
+  height: 72px;
+  padding: 15px;
+  background-color: #f6faf8;
   flex-wrap: wrap;
   gap: 12px;
   transition: background-color 0.3s;
+  max-width: 1280px;
 }
 
 .logo {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
-  color: var(--brand);
+  color: #1d6a63;
+  font-family: "Manrope", sans-serif;
 }
 
 .navLinks {
@@ -22,40 +25,47 @@
   gap: 32px;
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  cursor: pointer;
+  font-size: 16px;
+  cursor: pointer; 
 }
 
 .navLinks li {
-  color: var(--text-secondary);
+  color: #56615f;
 }
 
+/* hover for search */
 .navLinks li:hover {
   color: var(--brand);
 }
 
 .active {
   font-weight: 700;
-  color: var(--brand) !important;
-  border-bottom: 2px solid var(--brand);
+  border-bottom: 2px solid #1d6a63;
   padding-bottom: 2px;
-  text-decoration: none;
+
 }
 
 .navLinks a {
   text-decoration: none;
-  color: var(--text-secondary);
+  color: #56615F;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
 }
 
 .navLinks a:hover {
   color: var(--brand);
 }
 
+.navLinks a:active,
+.navLinks a:focus-visible {
+  background-color: transparent;
+  outline: none;
+}
+
 .searchBar {
   display: flex;
   align-items: center;
-  background-color: var(--bg-input);
-  border: 1px solid var(--border-input);
+background-color: #EEF5F3;
   border-radius: 24px;
   padding: 8px 16px;
   gap: 8px;
@@ -63,15 +73,15 @@
 }
 
 .searchIcon {
-  color: var(--text-muted);
+  color: #56615F;
   flex-shrink: 0;
 }
 
 .searchInput {
-  border: none;
+
   outline: none;
   font-size: 14px;
-  color: var(--text-primary);
+  color: #000000;
   width: 100%;
   background: transparent;
 }
@@ -97,13 +107,15 @@
 }
 
 .createBtn {
-  background-color: var(--brand);
-  color: #fff;
+  background-color: #1d6a63;
+  width: 127.07px;
+  height: 35px;
+  color: #e2fffa;
   border: none;
-  padding: 10px 20px;
   border-radius: 24px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
+  font-family: "Manrope", sans-serif;
 }
 
 .createBtn:hover {

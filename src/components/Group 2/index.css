@@ -34,7 +34,7 @@
 }
 
 /* ─── Dark mode ─────────────────────────────────────────────────────────────── */
-[data-theme='dark'] {
+/* [data-theme='dark'] {
   --brand: rgb(40, 160, 150);
   --brand-dark: rgb(30, 130, 122);
 
@@ -59,11 +59,11 @@
 
   --shadow-modal: 0 8px 32px rgba(0, 0, 0, 0.5);
   --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.3);
-}
+} */
 
-/* ─── Base styles ───────────────────────────────────────────────────────────── */
+─── Base styles ─────────────────────────────────────────────────────────────
 body {
-  background-color: var(--bg-subtle);
+  /* background-color: var(--bg-subtle); */
   color: var(--text-primary);
   transition: background-color 0.3s, color 0.3s;
 }

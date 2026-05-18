@@ -41,6 +41,7 @@ function Navbar() {
 
       {showSearch && (
         <div className={styles.searchBar}>
+          
           <IoSearchOutline size={18} className={styles.searchIcon} />
           <input
             type="text"

@@ -2,8 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 40px 40px 32px;
-  background-color: var(--bg-subtle);
+
+  padding-top: 40px;
+padding-left: 10px;
+padding-right: 10px;
+  background-color: #f6faf8;
   gap: 40px;
   transition: background-color 0.3s;
 }
@@ -12,6 +15,8 @@
   display: flex;
   align-items: flex-start;
   gap: 24px;
+  width: 805px;
+  height: 283px;
 }
 
 .avatarWrapper {
@@ -22,57 +27,64 @@
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
+  width: 224px;
+  height: 224px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--bg);
+  border: 4px solid #e7f0ed;
 }
 
 .verified {
   position: absolute;
-  bottom: 0px;
-  left: 50%;
+  bottom: 20px;
+  left: 70%;
+  color: #225468;
+  font-weight: 700;
   transform: translateX(-50%);
-  background-color: var(--verified-bg);
-  color: var(--verified-color);
+  background-color: #b4e4fc;
+  color: #225468[];
   font-size: 11px;
-  padding: 4px 10px;
+  width: 127px;
+  height: 24px;
+  justify-content: center;
   border-radius: 20px;
   white-space: nowrap;
   display: flex;
   align-items: center;
   gap: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  justify-content: space-between;
+  height: 240px;
 }
 
 .name {
   font-size: 36px;
   font-weight: 800;
-  color: var(--text-primary);
+  color: #2a3433;
   margin: 0;
 }
 
 .title {
   font-size: 11px;
   letter-spacing: 1px;
-  color: var(--text-accent);
+  color: #1d6a63;
   margin: 0;
   text-transform: uppercase;
 }
 
 .bio {
   font-size: 14px;
-  color: var(--text-secondary);
+  color: #56615f;
   max-width: 360px;
   line-height: 1.6;
   margin: 0;
+  max-width: 400px;
+  margin-top: 15px;
 }
 
 .actions {
@@ -83,10 +95,13 @@
 }
 
 .editBtn {
-  background-color: var(--brand);
+  background-color: #1d6a63;
   color: #fff;
   border: none;
-  padding: 1px 18px;
+  font-weight: 700;
+  width: 167px;
+  height: 48px;
+  justify-content: center;
   border-radius: 24px;
   font-size: 14px;
   cursor: pointer;
@@ -100,10 +115,12 @@
 }
 
 .settingsBtn {
-  background-color: rgb(182, 180, 180);
+  background-color: #d9e5e2;
   color: #000;
-  border: 1px solid var(--border-input);
-  padding: 10px 20px;
+  font-weight: 700;
+  justify-content: center;
+  width: 149px;
+  height: 48px;
   border-radius: 24px;
   font-size: 14px;
   cursor: pointer;
@@ -112,13 +129,12 @@
   gap: 6px;
 }
 
-.settingsBtn:hover {
+/* .settingsBtn:hover {
   background-color: var(--bg-card);
-}
+} */
 
 .right {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border);
+  background-color: #eef5f3;
   border-radius: 12px;
   padding: 20px 24px;
   min-width: 260px;
@@ -129,7 +145,7 @@
 .impactLabel {
   font-size: 10px;
   letter-spacing: 1.5px;
-  color: var(--text-muted);
+  color: #727d7b;
   margin: 0 0 12px;
   text-transform: uppercase;
 }
@@ -141,8 +157,7 @@
 }
 
 .statCard {
-  background-color: var(--stat-bg);
-  border: 1px solid var(--border);
+  background-color: #ffffff;
   border-radius: 8px;
   padding: 14px 20px;
   display: flex;
@@ -154,7 +169,7 @@
 .statNumber {
   font-size: 28px;
   font-weight: 700;
-  color: var(--brand);
+  color: #1d6a63;
 }
 
 .statText {
@@ -167,7 +182,7 @@
   flex-direction: column;
   gap: 6px;
   font-size: 13px;
-  color: var(--text-secondary);
+  color: #56615f;
 }
 
 .meta p {
@@ -178,7 +193,7 @@
 }
 
 .metaIcon {
-  color: var(--brand);
+  color: #1d6a63;
   flex-shrink: 0;
 }
 
