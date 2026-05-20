@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Contact from "../components/Contact";
+import ContactUsFooter from "../components/ContactUsFooter";
 
 const ContactUs = () => {
   return (
@@ -8,6 +9,7 @@ const ContactUs = () => {
       <Navbar />
       <div>
         <Contact />
+        <ContactUsFooter/>
       </div>
     </div>
   );

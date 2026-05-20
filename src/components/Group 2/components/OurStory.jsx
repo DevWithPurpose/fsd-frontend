@@ -5,15 +5,19 @@ import { FaArrowRight } from "react-icons/fa";
 const OurStory = () => {
   return (
     <section className="mt-20">
-      <div className="flex justify-between">
-        <div className="w-[576px] h-[720px] ">
+      <div className="flex flex-col-reverse lg:flex-row justify-between">
+
+
+        <div className="mt-10 lg:mt-0 lg:w-[576px] lg:h-[720px] ">
           <img
             src={gardenCrops}
             alt="Crops for display"
             className="w-full h-full object-cover rounded-[30px]"
           />
         </div>
-        <div className="w-[576px]  pt-40 ml-10">
+
+
+        <div className="lg:w-[576px]  lg:pt-40 lg:ml-10">
           <h1 className="text-[30px] font-[700]">Our Story</h1>
           <div className="text-[18px] text-[#56615F] mt-8">
             <p>
@@ -21,7 +25,7 @@ const OurStory = () => {
               parks, The Commons began with a simple question: How can we make
               asking for help feel as natural as offering it?
             </p>
-            <p className="mt-8">
+            <p className="mt-2 lg:mt-8">
               We saw a world where digital connections were getting louder but
               community ties were growing thinner. We set out to build a
               platform that didn't demand your attention, but rather rewarded
@@ -35,6 +39,9 @@ const OurStory = () => {
             </button>
           </div>
         </div>
+
+
+
       </div>
     </section>
   );

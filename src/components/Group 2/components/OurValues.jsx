@@ -4,11 +4,11 @@ import { ourValues } from "../../../../data";
 const OurValues = () => {
   return (
     <section className="mt-20">
-      <div>
+      <div className="text-center lg:text-start">
         <h1 className="text-[30px] font-[700]">Our Values</h1>
       </div>
 
-      <div className="mt-5 flex gap-5 ">
+      <div className="mt-5 flex flex-col items-center lg:items-start lg:flex-row gap-5 ">
         {ourValues.map((value, index) => {
           return (
             <div

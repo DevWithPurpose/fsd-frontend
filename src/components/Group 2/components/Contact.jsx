@@ -5,18 +5,19 @@ import { CiShare2 } from "react-icons/ci";
 import contactUs from "../../../assets/contactUs.png";
 
 
+
 const Contact = () => {
   return (
-    <section className="mt-30">
-      <div className="flex justify-between">
-        <div className="w-[576px] h-[953px] ">
+    <section className="mt-10 lg:mt-30">
+      <div className="flex flex-col lg:flex-row lg:justify-between">
+        <div className="lg:w-[576px] lg:h-[953px] p-2 lg:p-0">
           <div>
-            <div className="w-[450px]">
-              <h1 className="text-[57px] text-[#1D6A63]">
+            <div className="lg:w-[450px]">
+              <h1 className="text-[25px] font-[700] lg:text-[50px] text-[#1D6A63]">
                 Let's find your place in our story
               </h1>
             </div>
-            <div className="w-[448px] mt-5">
+            <div className="lg:w-[448px] mt-5">
               <p className="text-[18px] text-[#56615F]">
                 Whether you're looking for support, have a question about
                 membership, or just want to say hello, our door is always open.
@@ -32,8 +33,12 @@ const Contact = () => {
                 <RxEnvelopeClosed size={20} color="#1D6A63" />
               </span>
               <div>
-                <h1 className="text-[16px] font-[700]">Email Us</h1>
-                <a href="">hello@thecommons.org</a>
+                <h1 className="text-[14px] lg:text-[16px] font-[700]">
+                  Email Us
+                </h1>
+                <a href="" className="text-[12px] lg:text-[16px]">
+                  hello@thecommons.org
+                </a>
               </div>
             </div>
 
@@ -42,8 +47,12 @@ const Contact = () => {
                 <CiLocationOn size={25} color="#1D6A63" />
               </span>
               <div className="w-[177px]">
-                <h1 className="text-[16px] font-[700]">Visit the Library</h1>
-                <p>42nd Archive Street, South District, SD 1024</p>
+                <h1 className="text-[14px] lg:text-[16px] font-[700]">
+                  Visit the Library
+                </h1>
+                <p className="text-[12px] lg:text-[16px]">
+                  42nd Archive Street, South District, SD 1024
+                </p>
               </div>
             </div>
 
@@ -52,8 +61,10 @@ const Contact = () => {
                 <CiShare2 size={25} color="#1D6A63" />
               </span>
               <div>
-                <h1 className="text-[16px] font-[700]">Follow the commons</h1>
-                <div className="flex gap-3">
+                <h1 className="text-[14px] lg:text-[16px] font-[700]">
+                  Follow the commons
+                </h1>
+                <div className="flex gap-3 text-[12px] lg:text-[16px]">
                   <a href="" className="text-[#1D6A63] font-[700]">
                     Instagram
                   </a>
@@ -70,8 +81,8 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-[576px] h-[953px]">
-          <div className="h-[805px] bg-[#EEF5F3] rounded-[12px] p-10">
+        <div className="lg:w-[576px] lg:h-[953px] mt-10 lg:mt-0">
+          <div className="h-[805px] bg-[#EEF5F3] rounded-[12px] p-4 lg:p-10">
             <form>
               <div className="flex flex-col gap-5">
                 <div className="flex flex-col">
@@ -130,18 +141,21 @@ const Contact = () => {
                   <textarea
                     name=""
                     id=""
-                    className="h-[152px] bg-[#FFFFFF] mt-3"
+                    placeholder="How can we help you today?"
+                    className="h-[152px] bg-[#FFFFFF] mt-3 p-3"
                   ></textarea>
                 </div>
 
                 <button className="bg-[#1D6A63] h-[60px] mt-3 rounded-[10px] text-[#E2FFFA] text-[18px] cursor-pointer font-[700]">
                   Send Message
                 </button>
-                <div className="flex mx-auto w-[434px]">
-                  <p className="text-[12px] text-[#727D7B]">
+                <div className="flex mx-auto lg:w-[434px]">
+                  <p className="lg:text-[12px] text-[#727D7B]">
                     By submitting this form, you agree to our Privacy Policy and
                     understand how we{" "}
-                    <span className="ml-30">protect your personal sanctuary.</span>
+                    <span className="lg:ml-30">
+                      protect your personal sanctuary.
+                    </span>
                   </p>
                 </div>
               </div>
