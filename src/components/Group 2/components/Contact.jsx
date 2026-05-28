@@ -3,10 +3,23 @@ import { RxEnvelopeClosed } from "react-icons/rx";
 import { CiLocationOn } from "react-icons/ci";
 import { CiShare2 } from "react-icons/ci";
 import contactUs from "../../../assets/contactUs.png";
-
-
+import { contactUsValidator } from "../../../../utils/formValidator";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(contactUsValidator),
+  });
+
+  const onSubmit = (data) => {
+    console.log("Contact form submitted", data);
+  };
+
   return (
     <section className="mt-10 lg:mt-30">
       <div className="flex flex-col lg:flex-row lg:justify-between">
@@ -83,7 +96,7 @@ const Contact = () => {
 
         <div className="lg:w-[576px] lg:h-[953px] mt-10 lg:mt-0">
           <div className="h-[805px] bg-[#EEF5F3] rounded-[12px] p-4 lg:p-10">
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-5">
                 <div className="flex flex-col">
                   <label
@@ -94,40 +107,55 @@ const Contact = () => {
                   </label>
 
                   <input
+                    id="name"
+                    {...register("name")}
                     type="text"
                     placeholder="Jane Doe"
-                    className=" bg-[#FFFFFF] rounded-[4px] h-[56px] p-3 mt-3"
+                    className="bg-[#FFFFFF] rounded-[4px] h-[56px] p-3 mt-3"
                   />
+                  {errors.name && (
+                    <p className="text-sm text-red-600 mt-2">{errors.name.message}</p>
+                  )}
                 </div>
 
                 <div className="flex flex-col my-5">
                   <label
-                    htmlFor="name"
+                    htmlFor="email"
                     className="text-[#56615F] text-[14px] font-[700]"
                   >
                     EMAIL ADDRESS
                   </label>
 
                   <input
+                    id="email"
+                    {...register("email")}
                     type="email"
                     placeholder="jane@example.com"
-                    className=" bg-[#FFFFFF] rounded-[4px] h-[56px] p-3 mt-3"
+                    className="bg-[#FFFFFF] rounded-[4px] h-[56px] p-3 mt-3"
                   />
+                  {errors.email && (
+                    <p className="text-sm text-red-600 mt-2">{errors.email.message}</p>
+                  )}
                 </div>
 
                 <div className="flex flex-col">
                   <label
-                    htmlFor="name"
+                    htmlFor="subject"
                     className="text-[#56615F] text-[14px] font-[700]"
                   >
                     SUBJECT
                   </label>
 
                   <input
-                    type="subject"
-                    placeholder="Jane Doe"
-                    className=" bg-[#FFFFFF] rounded-[4px] h-[56px] p-3 mt-3"
+                    id="subject"
+                    {...register("subject")}
+                    type="text"
+                    placeholder="Subject"
+                    className="bg-[#FFFFFF] rounded-[4px] h-[56px] p-3 mt-3"
                   />
+                  {errors.subject && (
+                    <p className="text-sm text-red-600 mt-2">{errors.subject.message}</p>
+                  )}
                 </div>
 
                 <div className="flex flex-col">
@@ -139,11 +167,14 @@ const Contact = () => {
                   </label>
 
                   <textarea
-                    name=""
-                    id=""
+                    id="message"
+                    {...register("message")}
                     placeholder="How can we help you today?"
                     className="h-[152px] bg-[#FFFFFF] mt-3 p-3"
-                  ></textarea>
+                  />
+                  {errors.message && (
+                    <p className="text-sm text-red-600 mt-2">{errors.message.message}</p>
+                  )}
                 </div>
 
                 <button className="bg-[#1D6A63] h-[60px] mt-3 rounded-[10px] text-[#E2FFFA] text-[18px] cursor-pointer font-[700]">
