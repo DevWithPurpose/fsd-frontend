@@ -2,6 +2,10 @@ import React from "react";
 import { ourValues } from "../../../../data";
 
 const OurValues = () => {
+
+ const bgColors = ["#A8F0E7", "#CCE8E3", "#B4E4FC"];
+
+
   return (
     <section className="mt-20">
       <div className="text-center lg:text-start">
@@ -15,7 +19,10 @@ const OurValues = () => {
               key={index}
               className="w-[389px] h-[242px] rounded-[12px] p-5 bg-[#EEF5F3]"
             >
-              <div className="flex justify-center items-center rounded-[8px] h-[48px] w-[48px] border  ">
+              <div
+                className="flex justify-center items-center rounded-[8px] h-[48px] w-[48px] "
+                style={{ backgroundColor: bgColors[index] }}
+              >
                 <img
                   src={value.image}
                   alt="icons"
