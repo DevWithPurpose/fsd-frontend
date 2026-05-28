@@ -9,7 +9,7 @@ import AboutUsFooter from "../components/AboutUsFooter";
 
 const AboutUs = () => {
   return (
-    <div>
+    <div >
       <Navbar />
       <main>
         <section className="p-[15px]">

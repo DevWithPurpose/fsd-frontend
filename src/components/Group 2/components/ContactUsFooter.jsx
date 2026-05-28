@@ -26,7 +26,7 @@ const ContactUsFooter = () => {
           </div>
 
           <div className='mt-8 lg:mt-0'>
-            <h1 h1 className="text-[16px] text-[#2A3433] font-[700]">
+            <h1 className="text-[16px] text-[#2A3433] font-[700]">
               Support
             </h1>
 

@@ -9,7 +9,13 @@
   flex-wrap: wrap;
   gap: 12px;
   transition: background-color 0.3s;
-  max-width: 1280px;
+    max-width: 1280px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; /* full width background */
+  z-index: 100;
+  margin: 0 auto;
 }
 
 .logo {
@@ -26,7 +32,7 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .navLinks li {
@@ -42,12 +48,11 @@
   font-weight: 700;
   border-bottom: 2px solid #1d6a63;
   padding-bottom: 2px;
-
 }
 
 .navLinks a {
   text-decoration: none;
-  color: #56615F;
+  color: #56615f;
   -webkit-tap-highlight-color: transparent;
   background-color: transparent;
 }
@@ -65,7 +70,7 @@
 .searchBar {
   display: flex;
   align-items: center;
-background-color: #EEF5F3;
+  background-color: #eef5f3;
   border-radius: 24px;
   padding: 8px 16px;
   gap: 8px;
@@ -73,12 +78,11 @@ background-color: #EEF5F3;
 }
 
 .searchIcon {
-  color: #56615F;
+  color: #56615f;
   flex-shrink: 0;
 }
 
 .searchInput {
-
   outline: none;
   font-size: 14px;
   color: #000000;
@@ -175,6 +179,7 @@ background-color: #EEF5F3;
   .navLinks {
     gap: 16px;
     font-size: 12px;
+    display: none;
   }
 
   .iconBtn {
