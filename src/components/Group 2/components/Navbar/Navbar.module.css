@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  padding: 15px;
+  background-color: #f6faf8;
+  flex-wrap: wrap;
+  gap: 12px;
+  transition: background-color 0.3s;
+    max-width: 1280px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; /* full width background */
+  z-index: 100;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1d6a63;
+  font-family: "Manrope", sans-serif;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navLinks li {
+  color: #56615f;
+}
+
+/* hover for search */
+.navLinks li:hover {
+  color: var(--brand);
+}
+
+.active {
+  font-weight: 700;
+  border-bottom: 2px solid #1d6a63;
+  padding-bottom: 2px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #56615f;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+}
+
+.navLinks a:hover {
+  color: var(--brand);
+}
+
+.navLinks a:active,
+.navLinks a:focus-visible {
+  background-color: transparent;
+  outline: none;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: #eef5f3;
+  border-radius: 24px;
+  padding: 8px 16px;
+  gap: 8px;
+  width: 280px;
+}
+
+.searchIcon {
+  color: #56615f;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  outline: none;
+  font-size: 14px;
+  color: #000000;
+  width: 100%;
+  background: transparent;
+}
+
+.searchInput::placeholder {
+  color: var(--text-muted);
+}
+
+.searchClose {
+  color: var(--text-muted);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.searchClose:hover {
+  color: var(--text-primary);
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.createBtn {
+  background-color: #1d6a63;
+  width: 127.07px;
+  height: 35px;
+  color: #e2fffa;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+}
+
+.createBtn:hover {
+  background-color: var(--brand-dark);
+}
+
+.iconBtn {
+  color: var(--brand);
+  cursor: pointer;
+}
+
+/* Theme toggle button */
+.themeBtn {
+  display: none;
+  background: none;
+  border: 1px solid var(--border-input);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--brand);
+  transition: background-color 0.2s;
+}
+
+.themeBtn:hover {
+  background-color: var(--bg-subtle);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 20px;
+    gap: 10px;
+  }
+
+  .navLinks {
+    gap: 20px;
+    font-size: 13px;
+  }
+
+  .createBtn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .navLinks {
+    gap: 16px;
+    font-size: 12px;
+    display: none;
+  }
+
+  .iconBtn {
+    display: none;
+  }
+}
