@@ -10,8 +10,8 @@ import secureIcon from "../../assets/secure-icon.svg";
 
 function Guidelines({text}) {
   return (
-    <div className="flex items-start gap-3 text-sm leading-[17.5px]">
-      <img src={checked} alt="Checked" />
+    <div className="flex items-start md:gap-3 gap-2 md:text-sm text-xs leading-[17.5px]">
+      <img src={checked} alt="Checked" className="md:w- w-4 md:h- h-4" />
       <p>{text}</p>
     </div>
   );
@@ -23,9 +23,9 @@ const Page = () => {
   return (
     <div className="bg-[#F6FAF8] h-full pb-32.5">
       <header className="flex items-center justify-between p-6">
-        <div className="flex items-center gap-5">
-          <img src={closeIcon} alt="A close icon" className="w-3.5 h-3.5" />
-          <h2 className="text-[#1D6A63] text-2xl font-bold leading-8">
+        <div className="flex items-center md:gap-5 gap-3">
+          <img src={closeIcon} alt="A close icon" className="md:w-3.5 w-3 md:h-3.5 h-3" />
+          <h2 className="text-[#1D6A63] md:text-2xl text-xl font-bold sm:leading-8 leading-5">
             The Commons
           </h2>
         </div>
@@ -35,20 +35,20 @@ const Page = () => {
         </button>
       </header>
 
-      <section className="mt-8 mx-auto w-212">
-        <h1 className="text-[56px] leading-15 tracking-[-2.6px] text-[#2A3433]">
+      <section className="mt-8 md:mx-auto mx-5 max-w-212">
+        <h1 className="md:text-[56px] sm:text-[40px] text-[35px] md:leading-15 md:tracking-[-2.6px] text-[#2A3433]">
           Share with your{" "}
-          <span className="text-[#1D6A63] leading-20 tracking-normal block">
+          <span className="text-[#1D6A63] md:leading-20 tracking-normal sm:block">
             {" "}
             community.
           </span>
         </h1>
-        <p className="mt-4 text-[#56615F] text-lg w-142">
+        <p className="mt-4 text-[#56615F] text-lg max-w-142">
           Whether you're offering a hand or seeking support, your contribution
           strengthens the digital commons. Keep it clear, keep it kind.
         </p>
 
-        <div className="mt-12 text-[#56615F] flex items-center gap-12">
+        <div className="mt-12 text-[#56615F] flex lg:flex-nowrap flex-wrap items-center gap-12">
           <div>
             <form
               method="post"
@@ -58,18 +58,18 @@ const Page = () => {
               <h5 className="text-sm">POST INTENT</h5>
               <div className="flex items-center mt-4.25 gap-4">
                 <button
-                  className={`border rounded-xl p-5 w-[266.67px] text-left transition-transform ease-in-out hover:scale-95 ${selectedOption === "request" ? "bg-[#A8F0E7] border-[#1D6A63]" : "bg-transparent border-[#A9B4B24D]"}`}
+                  className={`border rounded-xl p-5 lg:w-[266.67px] md:w-50 text-left transition-transform ease-in-out hover:scale-95 ${selectedOption === "request" ? "bg-[#A8F0E7] border-[#1D6A63]" : "bg-transparent border-[#A9B4B24D]"}`}
                   onClick={() => setSelectedOption("request")}
                 >
                   <img src={requestIcon} alt="Request" />
                   <p className="text-[#2A3433] text-base mt-2 leading-6">
                     Request
                   </p>
-                  <p className="text-[12px] leading-4">I need some help</p>
+                  <p className="md:text-[12px] leading-4">I need some help</p>
                 </button>
 
                 <button
-                  className={`border rounded-xl p-5 w-[266.67px] text-left transition-transform ease-in-out hover:scale-95 ${selectedOption === "offer" ? "bg-[#A8F0E7] border-[#1D6A63]" : "bg-transparent border-[#A9B4B24D]"}`}
+                  className={`border rounded-xl p-5 lg:w-[266.67px] md:w-50 text-left transition-transform ease-in-out hover:scale-95 ${selectedOption === "offer" ? "bg-[#A8F0E7] border-[#1D6A63]" : "bg-transparent border-[#A9B4B24D]"}`}
                   onClick={() => setSelectedOption("offer")}
                   >
                   <img src={offerIcon} alt="Offer" />
@@ -86,7 +86,7 @@ const Page = () => {
                 <div></div>
               )} */}
               
-              <div className="flex flex-col gap-10 mt-10">
+              <div className="flex flex-col md:gap-10 gap-5 mt-10">
                 <div>
                   <label htmlFor="title">TITLE</label>
                   <input
@@ -99,7 +99,7 @@ const Page = () => {
                     maxLength={75}
                   />
                 </div>
-                <div className="flex items-center gap-6">
+                <div className="flex flex-wrap items-center gap-6">
                   <div>
                     <label htmlFor="category">CATEGORY</label>
                     <select
@@ -154,7 +154,7 @@ const Page = () => {
               <button
                 type="submit"
                 form="post-form"
-                className="text-[#E2FFFA] font-bold text-lg mt-16 bg-linear-[#1D6A63] w-[202.59px] py-5 rounded-full cursor-pointer shadow-[0_4_6_-4_#1D6A631A,0_10_15_-3_#1D6A631A] transition-transform ease-in-out hover:scale-95"
+                className="text-[#E2FFFA] font-bold md:text-lg text-base md:mt-16 mt-8 bg-linear-[#1D6A63] md:w-[202.59px] w-42.5 py-5 rounded-full cursor-pointer shadow-[0_4_6_-4_#1D6A631A,0_10_15_-3_#1D6A631A] transition-transform ease-in-out hover:scale-95"
               >
                 Submit Post
               </button>
@@ -162,18 +162,18 @@ const Page = () => {
           </div>
 
           <div>
-            <div className="bg-[#FFFFFF] p-8 rounded-xl flex flex-col gap-4">
-              <h4 className="text-[#2A3433] text-xl">Community Guidelines</h4>
+            <div className="bg-[#FFFFFF] md:p-8 p-5 rounded-xl flex flex-col md:gap-4 gap-2">
+              <h4 className="text-[#2A3433] md:text-xl">Community Guidelines</h4>
               <Guidelines text="Keep descriptions clear and honest." />
               <Guidelines text="Protect your privacy: don't share street addresses publicly." />
               <Guidelines text="Be responsive to those who reply to your post." />
             </div>
 
-            <div className="mt-8">
+            <div className="md:mt-8 mt-5">
               <img src={communityHelp} alt="Community help" />
             </div>
 
-            <div className="bg-[#B4E4FC4D] rounded-xl p-6 mt-8">
+            <div className="bg-[#B4E4FC4D] rounded-xl p-6 md:mt-8 mt-5">
               <div className="flex items-center gap-3">
                 <img src={secureIcon} alt="A badge icon" />
                 <h4 className="text-[#356579] font-bold tracking-[0.6px] text-[12px] leading-4">
