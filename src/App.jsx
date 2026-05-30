@@ -7,6 +7,9 @@ import ProfilePage from "./components/Group 2/Page";
 import AboutUs from "./components/Group 2/pages/AboutUs";
 import ContactUs from "./components/Group 2/pages/ContactUs";
 
+import Page from "./components/Group 3/Page";
+import HelpSupportPage from "./Pages/HelpSupportPage";
+import AccountSettings from "./components/Group 3/Accountsettings";
 function App() {
   return (
     <ThemeProvider>
@@ -20,6 +23,9 @@ function App() {
           <Route path="/support" element={<ProfilePage />} />
           <Route path="about-us" element={<AboutUs />} />
           <Route path="contact-us" element={<ContactUs />} />
+          <Route path="/createpost" element={<Page />} />
+          <Route path="/Help" element={<HelpSupportPage />} />
+          <Route path="/account-settings" element={<AccountSettings />} />
         </Routes>
       </Router>
     </ThemeProvider>
