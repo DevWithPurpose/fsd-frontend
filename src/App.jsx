@@ -4,7 +4,7 @@ import Welcome from "./components/Welcome";
 import LandingPage from "./components/Group1/landing-page/LandingPage";
 import Dashboard from "./components/Group1/dashboard/Dashboard";
 import Services from "./components/Group1/services/Services";
-import Welcome from "./components/welocme";
+
 import ThemeProvider from "./components/Group 2/context/ThemeProvider";
 
 import ProfilePage from "./components/Group 2/Page";
