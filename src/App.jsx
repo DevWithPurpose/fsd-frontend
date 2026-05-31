@@ -1,5 +1,9 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Welcome from "./components/Welcome";
+import LandingPage from "./components/Group1/landing-page/LandingPage";
+import Dashboard from "./components/Group1/dashboard/Dashboard";
+import Services from "./components/Group1/services/Services";
 import Welcome from "./components/welocme";
 import ThemeProvider from "./components/Group 2/context/ThemeProvider";
 
@@ -15,7 +19,9 @@ function App() {
     <ThemeProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<Welcome />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/Services" element={<Services />} />
           <Route path="/feed" element={<ProfilePage />} />
           <Route path="/profile/*" element={<ProfilePage />} />
           <Route path="/privacy" element={<ProfilePage />} />
