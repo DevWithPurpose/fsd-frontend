@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "category": "Tool Library",
+    "status": "Live",
+    "title": "Loaning out my mitre saw for the weekend",
+    "description": "Just bought a new DeWalt mitre saw. Happy to lend it to anyone working on trim or deck projects.",
+    "responses": 8
+  },
+  {
+    "id": 2,
+    "category": "Garden Consultation",
+    "status": "Live",
+    "title": "Advice on raised bed drainage",
+    "description": "Building some cedar beds for a neighbor and looking for advice on the best aggregate for drainage.",
+    "responses": 3
+  },
+  {
+    "id": 3,
+    "category": "Planning Permission",
+    "status": "Live",
+    "title": "Q&A: Shed building & City Bylaws",
+    "description": "I have the local planning handbook for this year. Ask me anything about setback rules for outbuildings.",
+    "responses": 7
+  }
+]
